@@ -1,0 +1,54 @@
+
+how to add new avatar :-
+
+		on ABOUT.HTML page
+
+                a) copy the below code snippet and paste it below the one for the previous news item
+                b) add the corresponding image in the ./public/img/news images/ repository of the website
+                c) edit the ${PARAMETERS}
+		d) DO NOT edit bottem last image it is for company logo
+
+                    <div class="box down ">
+                        <p class="empname">${NAME_OF_EMPLOYE}</p>
+			<p class="post"> ${POST_OF_EMPLOYE}</p>
+                        <img src="./public/img/Avatar/${IMAGE_FILE_NAME}" class="images">
+                    </div>
+
+                e.g.
+
+                    <div class="box down ">
+			<p class="empname"> Rohit </p>
+			<p class="post"> Software Developer </p>
+			<img src="./public/img/Avatar/Suganya.png" class="imagesfortry">
+			<img src="./public/img/Avatar/zzz.png" class="logoimages">
+		    </div>
+
+
+how to add new news :-
+
+		on NEWS.HTML page
+
+                a) copy the below code snippet and paste it above the one for the previous news item
+                b) add the corresponding image in the ./public/img/news images/ repository of the website
+                c) edit the ${PARAMETERS}
+                    <a href="${REDIRECTING_URL_OF_THE_NEWS}" target=”_blank” class="news-box up">
+                        <p class="news-description">${NEWS_TITLE_NB_MAX_80_CHARACTERS}</p>
+                        <img src="./public/img/news images/${IMAGE_FILE_NAME}" class="news-images">
+                        <p class="news-date"> ${DATE_OF_PUBLISHING} <br>  View on ${CHANNEL_NAME} </p>
+                    </a>
+                e.g.
+                    <a href="https://www.linkedin.com/feed/update/urn:li:activity:6886576630916014080/" target=”_blank” class="news-box up">
+                        <p class="news-description">Juakali celebrates its new partnership with Musoni!</p>
+                        <img src="./public/img/news images/myImage" class="news-images">
+                        <p class="news-date"> 18/01/2022 <br>  View on Linkedin </p>
+                    </a>
+
+
+how to add new Country:-
+
+		on ABOUT.HTML page
+
+                a) open about.html file and search for country name
+                b) copy full <path> and pest in "<g id=our_country>" group 
+                c) change its class to "our-country , L1 or L2 or L3" depending on how much delay we want in transition 
+		d) add country name in <title> ---- </title> below <path>

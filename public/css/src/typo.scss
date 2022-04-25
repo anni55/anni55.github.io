@@ -1,0 +1,48 @@
+h1, h2, h3, h4, h5, h6, b {
+	font-family: 'montserratbold';
+}
+
+h1 {
+	font-size: 35px;
+}
+
+@media (min-width: 800px) { 
+	h1 {
+		font-size: 48px;
+	}
+}
+
+@media (min-width: 576px) { 
+	h1 {
+		font-size: 40px;
+	}
+}
+
+h2 {
+	font-size: 40px;
+
+	&.lite {
+		font-family: 'montserratsemibold';
+	}
+}
+
+h3 {
+	font-size: 28px;
+}
+
+h4 {
+	font-family: 'montserratsemibold';
+	font-size: 24px;
+}
+
+b {
+	font-size: 16px;
+}
+
+span.lite {
+	font-size: 11px;
+
+	a {
+		font-size: 11px;
+	}
+}
